@@ -18,7 +18,7 @@ start = 0
 	    puts "#{seconds_to_midnight} SECOND(S)!"
 	    sleep(1)
 	    seconds_to_midnight -= 1
-      while seconds_to_midnight == start.size - 1
+      while seconds_to_midnight == (start.size - 1)
       sleep(4)
       end 
 	  end
