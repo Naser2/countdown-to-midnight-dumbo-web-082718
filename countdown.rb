@@ -11,7 +11,7 @@ start = 0
 
   countdown(10)
   
- ef countdown_with_sleep(seconds_to_midnight)
+ def countdown_with_sleep(seconds_to_midnight)
    start = 0
   #  pause = sleep(4)
 	  while seconds_to_midnight > start
