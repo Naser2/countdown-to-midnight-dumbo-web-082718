@@ -11,16 +11,17 @@ start = 0
 
   countdown(10)
   
-  def _with_sleep(seconds_to_midnight)
+ ef countdown_with_sleep(seconds_to_midnight)
    start = 0
-   sleep = 2
+  #  pause = sleep(4)
 	  while seconds_to_midnight > start
 	    puts "#{seconds_to_midnight} SECOND(S)!"
-	    sleep
+	    sleep(1)
 	    seconds_to_midnight -= 1
-
+      while seconds_to_midnight == start.size - 1
+      sleep(4)
+      end 
 	  end
 	  "HAPPY NEW YEAR!"
 	end
-
-  countdown(10)
+countdown_with_sleep(10)
